@@ -1,6 +1,11 @@
-# synpress/with-docker example
+# synpress example
 
-## How to run
+## How to run in headless
 
 - `npm install`
-- `npm test` or `npm run test:headless`
+- `npm test`
+
+## How to run in docker
+
+- `docker-compose build`
+- `docker-compose up`

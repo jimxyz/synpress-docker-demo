@@ -1,9 +1,9 @@
 version: "3.3"
 services:
-  frontend-cypress:
+  synpress-docker-demo:
     build:
       context: .
       dockerfile: ./Dockerfile
     volumes:
-      - /home/ubuntu/code/frontend-cypress/tests/e2e/screenshots:/usr/src/app/tests/e2e/screenshots
-      - /home/ubuntu/code/frontend-cypress/tests/e2e/videos:/usr/src/app/tests/e2e/videos
+      - ./tests/e2e/screenshots:/usr/src/app/tests/e2e/screenshots
+      - ./tests/e2e/videos:/usr/src/app/tests/e2e/videos
