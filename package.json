@@ -6,8 +6,7 @@
   "license": "MIT",
   "devDependencies": {
     "@metamask/test-dapp": "^7.0.1",
-    "@synthetixio/synpress": "^3.5.1",
-    "cypress": "12.7.0",
+    "@synthetixio/synpress": "3.7.2-beta.6",
     "serve": "^14.2.0",
     "start-server-and-test": "^2.0.0"
   },
