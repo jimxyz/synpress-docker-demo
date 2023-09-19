@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "lib": ["ES2018"],
+    "target": "ES2018",
+    "allowJs": true,
+    "baseUrl": "./",
+    "types": [
+      "cypress",
+      "@synthetixio/synpress/support",
+      "cypress-wait-until",
+      "@testing-library/cypress"
+    ],
+    "outDir": "./output"
+  },
+  "include": ["**/*.*"]
+}
