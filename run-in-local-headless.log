@@ -1,0 +1,112 @@
+(venv) jim@jims-Mac synpress-docker-demo % npm test    
+
+> @synpress-io/synpress-in-docker-example@1.0.0 test
+> export NODE_OPTIONS="--openssl-legacy-provider --no-experimental-fetch" && ./node_modules/.bin/start-server-and-test 'yarn start:server' http-get://localhost:3000 'npm run synpress:run'
+
+1: starting server using command "yarn start:server"
+and when url "[ 'http-get://localhost:3000' ]" is responding with HTTP status code 200
+running tests using command "npm run synpress:run"
+
+yarn run v1.22.19
+$ serve ./node_modules/@metamask/test-dapp/dist -p 3000
+
+   ┌───────────────────────────────────────────┐
+   │                                           │
+   │   Serving!                                │
+   │                                           │
+   │   - Local:    http://localhost:3000       │
+   │   - Network:  http://192.168.0.103:3000   │
+   │                                           │
+   │   Copied local address to clipboard!      │
+   │                                           │
+   └───────────────────────────────────────────┘
+
+ HTTP  9/19/2023 1:39:10 AM ::1 GET /
+ HTTP  9/19/2023 1:39:10 AM ::1 Returned 200 in 17 ms
+
+> @synpress-io/synpress-in-docker-example@1.0.0 synpress:run
+> ./node_modules/.bin/synpress run --config baseUrl=http://localhost:3000 --headless
+
+[12360:0919/013911.682656:ERROR:node_bindings.cc(279)] Most NODE_OPTIONs are not supported in packaged apps. See documentation for more details.
+[12360:0919/013911.682670:ERROR:node_bindings.cc(279)] Most NODE_OPTIONs are not supported in packaged apps. See documentation for more details.
+
+DevTools listening on ws://127.0.0.1:57699/devtools/browser/9b0c5a90-1189-46de-ab27-11176569cfff
+
+======================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        12.17.3                                                                        │
+  │ Browser:        Chrome 115                                                                     │
+  │ Node Version:   v20.0.0 (/Users/jim/.nvm/versions/node/v20.0.0/bin/node)                       │
+  │ Specs:          1 found (connect-wallet-spec.js)                                               │
+  │ Searched:       tests/e2e/specs/**/*.{js,jsx,ts,tsx}                                           │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  connect-wallet-spec.js                                                          (1 of 1)
+
+
+  connect wallet spec
+ HTTP  9/19/2023 1:39:33 AM 127.0.0.1 GET /
+ HTTP  9/19/2023 1:39:33 AM 127.0.0.1 Returned 200 in 2 ms
+ HTTP  9/19/2023 1:39:33 AM 127.0.0.1 GET /index.css
+ HTTP  9/19/2023 1:39:33 AM 127.0.0.1 Returned 200 in 3 ms
+ HTTP  9/19/2023 1:39:33 AM 127.0.0.1 GET /metamask-fox.svg
+ HTTP  9/19/2023 1:39:33 AM 127.0.0.1 GET /alert-red.svg
+ HTTP  9/19/2023 1:39:33 AM 127.0.0.1 Returned 200 in 4 ms
+ HTTP  9/19/2023 1:39:33 AM 127.0.0.1 Returned 200 in 3 ms
+ HTTP  9/19/2023 1:39:33 AM 127.0.0.1 GET /main.js
+ HTTP  9/19/2023 1:39:33 AM 127.0.0.1 Returned 200 in 7 ms
+ HTTP  9/19/2023 1:39:35 AM 127.0.0.1 GET /metamask-fox.svg
+ HTTP  9/19/2023 1:39:35 AM 127.0.0.1 Returned 200 in 1 ms
+    ✓ should connect wallet with success (19264ms)
+[disconnectWalletFromAllDapps] Wallet is connected to dapps, disconnecting..
+ HTTP  9/19/2023 1:39:38 AM 127.0.0.1 GET /metamask-fox.svg
+ HTTP  9/19/2023 1:39:38 AM 127.0.0.1 Returned 304 in 1 ms
+ HTTP  9/19/2023 1:39:42 AM 127.0.0.1 GET /metamask-fox.svg
+ HTTP  9/19/2023 1:39:42 AM 127.0.0.1 Returned 304 in 0 ms
+    ✓ import private key and connect wallet using imported metamask account (6935ms)
+
+
+  2 passing (26s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        true                                                                             │
+  │ Duration:     26 seconds                                                                       │
+  │ Spec Ran:     connect-wallet-spec.js                                                           │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Video)
+
+  -  Started compressing: Compressing to 32 CRF                                                     
+  -  Finished compressing: 8 seconds                                                 
+
+  -  Video output: /Users/jim/code/noname/synpress-docker-demo/tests/e2e/videos/connect-wallet-spec.js.mp4
+
+
+======================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ ✔  connect-wallet-spec.js                   00:26        2        2        -        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    ✔  All specs passed!                        00:26        2        2        -        -        -  
+
+Cypress run results: 2 total tests, 2 passed, 0 failed

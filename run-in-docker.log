@@ -1,0 +1,410 @@
+ubuntu@ip-172-31-32-231:~/code/synpress-docker-demo$ docker-compose up
+Creating network "synpress-docker-demo_default" with the default driver
+Creating synpress-docker-demo_synpress-docker-demo_1 ... done
+Attaching to synpress-docker-demo_synpress-docker-demo_1
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  | > @synpress-io/synpress-in-docker-example@1.0.0 test
+synpress-docker-demo_1  | > export NODE_OPTIONS="--openssl-legacy-provider --no-experimental-fetch" && ./node_modules/.bin/start-server-and-test 'yarn start:server' http-get://localhost:3000 'npm run synpress:run'
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  | 1: starting server using command "yarn start:server"
+synpress-docker-demo_1  | and when url "[ 'http-get://localhost:3000' ]" is responding with HTTP status code 200
+synpress-docker-demo_1  | running tests using command "npm run synpress:run"
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  | yarn run v1.22.19
+synpress-docker-demo_1  | $ serve ./node_modules/@metamask/test-dapp/dist -p 3000
+synpress-docker-demo_1  |  INFO  Accepting connections at http://localhost:3000
+synpress-docker-demo_1  |  HTTP  9/19/2023 1:54:56 AM 127.0.0.1 GET /
+synpress-docker-demo_1  |  HTTP  9/19/2023 1:54:56 AM 127.0.0.1 Returned 200 in 91 ms
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  | > @synpress-io/synpress-in-docker-example@1.0.0 synpress:run
+synpress-docker-demo_1  | > ./node_modules/.bin/synpress run --config baseUrl=http://localhost:3000 --headless
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  | [STARTED] Task without title.
+synpress-docker-demo_1  | [SUCCESS] Task without title.
+synpress-docker-demo_1  | [287:0919/015504.160866:ERROR:node_bindings.cc(279)] Most NODE_OPTIONs are not supported in packaged apps. See documentation for more details.
+synpress-docker-demo_1  | [287:0919/015504.160997:ERROR:node_bindings.cc(279)] Most NODE_OPTIONs are not supported in packaged apps. See documentation for more details.
+synpress-docker-demo_1  | libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_name = (null)
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  | DevTools listening on ws://127.0.0.1:34639/devtools/browser/857d1517-66f4-4824-8a51-24df20352c93
+synpress-docker-demo_1  | [458:0919/015504.908857:ERROR:gpu_memory_buffer_support_x11.cc(44)] dri3 extension not supported.
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  | ====================================================================================================
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  |   (Run Starting)
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  |   ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+synpress-docker-demo_1  |   │ Cypress:        12.17.3                                                                        │
+synpress-docker-demo_1  |   │ Browser:        Chrome 114                                                                     │
+synpress-docker-demo_1  |   │ Node Version:   v18.16.0 (/usr/local/bin/node)                                                 │
+synpress-docker-demo_1  |   │ Specs:          1 found (connect-wallet-spec.js)                                               │
+synpress-docker-demo_1  |   │ Searched:       tests/e2e/specs/**/*.{js,jsx,ts,tsx}                                           │
+synpress-docker-demo_1  |   └────────────────────────────────────────────────────────────────────────────────────────────────┘
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  | ────────────────────────────────────────────────────────────────────────────────────────────────────
+synpress-docker-demo_1  |                                                                                                     
+synpress-docker-demo_1  |   Running:  connect-wallet-spec.js                                                          (1 of 1)
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  |   connect wallet spec
+synpress-docker-demo_1  |  HTTP  9/19/2023 1:55:55 AM 127.0.0.1 GET /
+synpress-docker-demo_1  |  HTTP  9/19/2023 1:55:55 AM 127.0.0.1 Returned 200 in 41 ms
+synpress-docker-demo_1  |  HTTP  9/19/2023 1:55:55 AM 127.0.0.1 GET /index.css
+synpress-docker-demo_1  |  HTTP  9/19/2023 1:55:55 AM 127.0.0.1 Returned 200 in 13 ms
+synpress-docker-demo_1  |  HTTP  9/19/2023 1:55:56 AM 127.0.0.1 GET /metamask-fox.svg
+synpress-docker-demo_1  |  HTTP  9/19/2023 1:55:56 AM 127.0.0.1 Returned 200 in 6 ms
+synpress-docker-demo_1  |  HTTP  9/19/2023 1:55:56 AM 127.0.0.1 GET /alert-red.svg
+synpress-docker-demo_1  |  HTTP  9/19/2023 1:55:56 AM 127.0.0.1 GET /main.js
+synpress-docker-demo_1  |  HTTP  9/19/2023 1:55:56 AM 127.0.0.1 Returned 200 in 11 ms
+synpress-docker-demo_1  |  HTTP  9/19/2023 1:55:56 AM 127.0.0.1 Returned 200 in 90 ms
+synpress-docker-demo_1  |  HTTP  9/19/2023 1:56:02 AM 127.0.0.1 GET /metamask-fox.svg
+synpress-docker-demo_1  |  HTTP  9/19/2023 1:56:02 AM 127.0.0.1 Returned 200 in 2 ms
+synpress-docker-demo_1  |     (Attempt 1 of 2) should connect wallet with success
+synpress-docker-demo_1  |     1) should connect wallet with success
+synpress-docker-demo_1  | [disconnectWalletFromAllDapps] Wallet is not connected to any dapps, skipping..
+synpress-docker-demo_1  |  HTTP  9/19/2023 1:57:07 AM 127.0.0.1 GET /metamask-fox.svg
+synpress-docker-demo_1  |  HTTP  9/19/2023 1:57:07 AM 127.0.0.1 Returned 304 in 7 ms
+synpress-docker-demo_1  |     (Attempt 1 of 2) import private key and connect wallet using imported metamask account
+synpress-docker-demo_1  |     2) import private key and connect wallet using imported metamask account
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  |   0 passing (3m)
+synpress-docker-demo_1  |   2 failing
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  |   1) connect wallet spec
+synpress-docker-demo_1  |        should connect wallet with success:
+synpress-docker-demo_1  |      CypressError: `cy.task('acceptMetamaskAccess')` failed with the following error:
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  | > page.waitForSelector: Timeout 30000ms exceeded.
+synpress-docker-demo_1  | =========================== logs ===========================
+synpress-docker-demo_1  | waiting for locator('.notification #app-content .app') to be visible
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |   locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  | ============================================================
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  | https://on.cypress.io/api/task
+synpress-docker-demo_1  |       at <unknown> (http://localhost:3000/__cypress/runner/cypress_runner.js:151171:78)
+synpress-docker-demo_1  |       at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:18744:23)
+synpress-docker-demo_1  |       at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:16679:31)
+synpress-docker-demo_1  |       at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:16736:18)
+synpress-docker-demo_1  |       at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:16781:10)
+synpress-docker-demo_1  |       at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:16857:18)
+synpress-docker-demo_1  |       at _drainQueueStep (http://localhost:3000/__cypress/runner/cypress_runner.js:13451:12)
+synpress-docker-demo_1  |       at _drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:13444:9)
+synpress-docker-demo_1  |       at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:13460:5)
+synpress-docker-demo_1  |       at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:13330:14)
+synpress-docker-demo_1  |   From Your Spec Code:
+synpress-docker-demo_1  |       at Context.eval (webpack:///./support/commands.js:188:0)
+synpress-docker-demo_1  |   
+synpress-docker-demo_1  |   From Node.js Internals:
+synpress-docker-demo_1  |     TimeoutError: page.waitForSelector: Timeout 30000ms exceeded.
+synpress-docker-demo_1  |     =========================== logs ===========================
+synpress-docker-demo_1  |     waiting for locator('.notification #app-content .app') to be visible
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |     ============================================================
+synpress-docker-demo_1  |     page.waitForSelector: Timeout 30000ms exceeded.
+synpress-docker-demo_1  |     =========================== logs ===========================
+synpress-docker-demo_1  |     waiting for locator('.notification #app-content .app') to be visible
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |       locator resolved to hidden <div class="app os-linux">…</div>
+synpress-docker-demo_1  |     ============================================================
+synpress-docker-demo_1  |         at Object.waitFor (/usr/src/app/node_modules/@synthetixio/synpress/commands/playwright.js:200:16)
+synpress-docker-demo_1  |         at async Object.switchToMetamaskNotification (/usr/src/app/node_modules/@synthetixio/synpress/commands/playwright.js:180:9)
+synpress-docker-demo_1  |         at async acceptAccess (/usr/src/app/node_modules/@synthetixio/synpress/commands/metamask.js:890:30)
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  |   2) connect wallet spec
+synpress-docker-demo_1  |        import private key and connect wallet using imported metamask account:
+synpress-docker-demo_1  |      CypressError: `cy.task('disconnectMetamaskWalletFromAllDapps')` failed with the following error:
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  | > page.waitForSelector: Timeout 30000ms exceeded.
+synpress-docker-demo_1  | =========================== logs ===========================
+synpress-docker-demo_1  | waiting for locator('[data-testid=account-options-menu-button]') to be visible
+synpress-docker-demo_1  | ============================================================
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  | https://on.cypress.io/api/task
+synpress-docker-demo_1  |       at <unknown> (http://localhost:3000/__cypress/runner/cypress_runner.js:151171:78)
+synpress-docker-demo_1  |       at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:18744:23)
+synpress-docker-demo_1  |       at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:16679:31)
+synpress-docker-demo_1  |       at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:16736:18)
+synpress-docker-demo_1  |       at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:16781:10)
+synpress-docker-demo_1  |       at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:16857:18)
+synpress-docker-demo_1  |       at _drainQueueStep (http://localhost:3000/__cypress/runner/cypress_runner.js:13451:12)
+synpress-docker-demo_1  |       at _drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:13444:9)
+synpress-docker-demo_1  |       at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:13460:5)
+synpress-docker-demo_1  |       at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:13330:14)
+synpress-docker-demo_1  |   From Your Spec Code:
+synpress-docker-demo_1  |       at Context.eval (webpack:///./support/commands.js:129:0)
+synpress-docker-demo_1  |   
+synpress-docker-demo_1  |   From Node.js Internals:
+synpress-docker-demo_1  |     TimeoutError: page.waitForSelector: Timeout 30000ms exceeded.
+synpress-docker-demo_1  |     =========================== logs ===========================
+synpress-docker-demo_1  |     waiting for locator('[data-testid=account-options-menu-button]') to be visible
+synpress-docker-demo_1  |     ============================================================
+synpress-docker-demo_1  |     page.waitForSelector: Timeout 30000ms exceeded.
+synpress-docker-demo_1  |     =========================== logs ===========================
+synpress-docker-demo_1  |     waiting for locator('[data-testid=account-options-menu-button]') to be visible
+synpress-docker-demo_1  |     ============================================================
+synpress-docker-demo_1  |         at Object.waitFor (/usr/src/app/node_modules/@synthetixio/synpress/commands/playwright.js:200:16)
+synpress-docker-demo_1  |         at async Object.waitAndClick (/usr/src/app/node_modules/@synthetixio/synpress/commands/playwright.js:214:21)
+synpress-docker-demo_1  |         at async disconnectWalletFromAllDapps (/usr/src/app/node_modules/@synthetixio/synpress/commands/metamask.js:615:5)
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  |   (Results)
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  |   ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+synpress-docker-demo_1  |   │ Tests:        2                                                                                │
+synpress-docker-demo_1  |   │ Passing:      0                                                                                │
+synpress-docker-demo_1  |   │ Failing:      2                                                                                │
+synpress-docker-demo_1  |   │ Pending:      0                                                                                │
+synpress-docker-demo_1  |   │ Skipped:      0                                                                                │
+synpress-docker-demo_1  |   │ Screenshots:  4                                                                                │
+synpress-docker-demo_1  |   │ Video:        true                                                                             │
+synpress-docker-demo_1  |   │ Duration:     2 minutes, 41 seconds                                                            │
+synpress-docker-demo_1  |   │ Spec Ran:     connect-wallet-spec.js                                                           │
+synpress-docker-demo_1  |   └────────────────────────────────────────────────────────────────────────────────────────────────┘
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  |   (Screenshots)
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  |   -  /usr/src/app/tests/e2e/screenshots/connect-wallet-spec.js/connect wallet spec --      (780x463)
+synpress-docker-demo_1  |       should connect wallet with success (failed).png                                               
+synpress-docker-demo_1  |   -  /usr/src/app/tests/e2e/screenshots/connect-wallet-spec.js/connect wallet spec --      (780x463)
+synpress-docker-demo_1  |       should connect wallet with success (failed) (attempt 2).png                                   
+synpress-docker-demo_1  |   -  /usr/src/app/tests/e2e/screenshots/connect-wallet-spec.js/connect wallet spec --      (780x463)
+synpress-docker-demo_1  |       import private key and connect wallet using imported metamask account (failed).               
+synpress-docker-demo_1  |      png                                                                                            
+synpress-docker-demo_1  |   -  /usr/src/app/tests/e2e/screenshots/connect-wallet-spec.js/connect wallet spec --      (780x463)
+synpress-docker-demo_1  |       import private key and connect wallet using imported metamask account (failed)                
+synpress-docker-demo_1  |      (attempt 2).png                                                                                
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  |   (Video)
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  |   -  Started compressing: Compressing to 32 CRF                                                     
+synpress-docker-demo_1  |     Compression progress:  76%
+synpress-docker-demo_1  |   -  Finished compressing: 15 seconds                                                
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  |   -  Video output: /usr/src/app/tests/e2e/videos/connect-wallet-spec.js.mp4
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  | ====================================================================================================
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  |   (Run Finished)
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  |        Spec                                              Tests  Passing  Failing  Pending  Skipped  
+synpress-docker-demo_1  |   ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+synpress-docker-demo_1  |   │ ✖  connect-wallet-spec.js                   02:41        2        -        2        -        - │
+synpress-docker-demo_1  |   └────────────────────────────────────────────────────────────────────────────────────────────────┘
+synpress-docker-demo_1  |     ✖  1 of 1 failed (100%)                     02:41        2        -        2        -        -  
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  | Cypress run results: 2 total tests, 0 passed, 2 failed
+synpress-docker-demo_1  | 
+synpress-docker-demo_1  |  INFO  Gracefully shutting down. Please wait...
+synpress-docker-demo_1  | Error: Command failed with exit code 2: npm run synpress:run
+synpress-docker-demo_1  |     at makeError (/usr/src/app/node_modules/start-server-and-test/node_modules/execa/lib/error.js:60:11)
+synpress-docker-demo_1  |     at handlePromise (/usr/src/app/node_modules/start-server-and-test/node_modules/execa/index.js:118:26)
+synpress-docker-demo_1  |     at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+synpress-docker-demo_1  |   shortMessage: 'Command failed with exit code 2: npm run synpress:run',
+synpress-docker-demo_1  |   command: 'npm run synpress:run',
+synpress-docker-demo_1  |   escapedCommand: '"npm run synpress:run"',
+synpress-docker-demo_1  |   exitCode: 2,
+synpress-docker-demo_1  |   signal: undefined,
+synpress-docker-demo_1  |   signalDescription: undefined,
+synpress-docker-demo_1  |   stdout: undefined,
+synpress-docker-demo_1  |   stderr: undefined,
+synpress-docker-demo_1  |   failed: true,
+synpress-docker-demo_1  |   timedOut: false,
+synpress-docker-demo_1  |   isCanceled: false,
+synpress-docker-demo_1  |   killed: false
+synpress-docker-demo_1  | }
+synpress-docker-demo_synpress-docker-demo_1 exited with code 1
