@@ -11,7 +11,7 @@
     "start-server-and-test": "^2.0.0"
   },
   "scripts": {
-    "synpress:run": "./node_modules/.bin/synpress run --config baseUrl=http://localhost:3000 --headless",
+    "synpress:run": "./node_modules/.bin/synpress run --config baseUrl=http://localhost:3000",
     "start:server": "serve ./node_modules/@metamask/test-dapp/dist -p 3000",
     "test": "export NODE_OPTIONS=\"--openssl-legacy-provider --no-experimental-fetch\" && ./node_modules/.bin/start-server-and-test 'yarn start:server' http-get://localhost:3000 'npm run synpress:run'",
     "test:headless": "export NODE_OPTIONS=\"--openssl-legacy-provider --no-experimental-fetch\" && ./node_modules/.bin/start-server-and-test 'npm run start:server' http-get://localhost:3000 'npm run synpress:run --headless'"

@@ -1,6 +1,5 @@
 ubuntu@ip-172-31-32-231:~/code/synpress-docker-demo$ docker-compose up
-Creating network "synpress-docker-demo_default" with the default driver
-Creating synpress-docker-demo_synpress-docker-demo_1 ... done
+Recreating synpress-docker-demo_synpress-docker-demo_1 ... done
 Attaching to synpress-docker-demo_synpress-docker-demo_1
 synpress-docker-demo_1  | 
 synpress-docker-demo_1  | > @synpress-io/synpress-in-docker-example@1.0.0 test
@@ -13,20 +12,20 @@ synpress-docker-demo_1  |
 synpress-docker-demo_1  | yarn run v1.22.19
 synpress-docker-demo_1  | $ serve ./node_modules/@metamask/test-dapp/dist -p 3000
 synpress-docker-demo_1  |  INFO  Accepting connections at http://localhost:3000
-synpress-docker-demo_1  |  HTTP  9/19/2023 1:54:56 AM 127.0.0.1 GET /
-synpress-docker-demo_1  |  HTTP  9/19/2023 1:54:56 AM 127.0.0.1 Returned 200 in 91 ms
+synpress-docker-demo_1  |  HTTP  9/20/2023 1:30:03 AM 127.0.0.1 GET /
+synpress-docker-demo_1  |  HTTP  9/20/2023 1:30:03 AM 127.0.0.1 Returned 200 in 90 ms
 synpress-docker-demo_1  | 
 synpress-docker-demo_1  | > @synpress-io/synpress-in-docker-example@1.0.0 synpress:run
-synpress-docker-demo_1  | > ./node_modules/.bin/synpress run --config baseUrl=http://localhost:3000 --headless
+synpress-docker-demo_1  | > ./node_modules/.bin/synpress run --config baseUrl=http://localhost:3000
 synpress-docker-demo_1  | 
 synpress-docker-demo_1  | [STARTED] Task without title.
 synpress-docker-demo_1  | [SUCCESS] Task without title.
-synpress-docker-demo_1  | [287:0919/015504.160866:ERROR:node_bindings.cc(279)] Most NODE_OPTIONs are not supported in packaged apps. See documentation for more details.
-synpress-docker-demo_1  | [287:0919/015504.160997:ERROR:node_bindings.cc(279)] Most NODE_OPTIONs are not supported in packaged apps. See documentation for more details.
-synpress-docker-demo_1  | libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_name = (null)
+synpress-docker-demo_1  | [274:0920/013009.664411:ERROR:node_bindings.cc(279)] Most NODE_OPTIONs are not supported in packaged apps. See documentation for more details.
+synpress-docker-demo_1  | [274:0920/013009.664525:ERROR:node_bindings.cc(279)] Most NODE_OPTIONs are not supported in packaged apps. See documentation for more details.
 synpress-docker-demo_1  | 
-synpress-docker-demo_1  | DevTools listening on ws://127.0.0.1:34639/devtools/browser/857d1517-66f4-4824-8a51-24df20352c93
-synpress-docker-demo_1  | [458:0919/015504.908857:ERROR:gpu_memory_buffer_support_x11.cc(44)] dri3 extension not supported.
+synpress-docker-demo_1  | DevTools listening on ws://127.0.0.1:43445/devtools/browser/d6ace2e8-98cb-42a6-9c56-796a3a71fedc
+synpress-docker-demo_1  | libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_name = (null)
+synpress-docker-demo_1  | [445:0920/013010.434406:ERROR:gpu_memory_buffer_support_x11.cc(44)] dri3 extension not supported.
 synpress-docker-demo_1  | 
 synpress-docker-demo_1  | ====================================================================================================
 synpress-docker-demo_1  | 
@@ -47,23 +46,23 @@ synpress-docker-demo_1  |   Running:  connect-wallet-spec.js                    
 synpress-docker-demo_1  | 
 synpress-docker-demo_1  | 
 synpress-docker-demo_1  |   connect wallet spec
-synpress-docker-demo_1  |  HTTP  9/19/2023 1:55:55 AM 127.0.0.1 GET /
-synpress-docker-demo_1  |  HTTP  9/19/2023 1:55:55 AM 127.0.0.1 Returned 200 in 41 ms
-synpress-docker-demo_1  |  HTTP  9/19/2023 1:55:55 AM 127.0.0.1 GET /index.css
-synpress-docker-demo_1  |  HTTP  9/19/2023 1:55:55 AM 127.0.0.1 Returned 200 in 13 ms
-synpress-docker-demo_1  |  HTTP  9/19/2023 1:55:56 AM 127.0.0.1 GET /metamask-fox.svg
-synpress-docker-demo_1  |  HTTP  9/19/2023 1:55:56 AM 127.0.0.1 Returned 200 in 6 ms
-synpress-docker-demo_1  |  HTTP  9/19/2023 1:55:56 AM 127.0.0.1 GET /alert-red.svg
-synpress-docker-demo_1  |  HTTP  9/19/2023 1:55:56 AM 127.0.0.1 GET /main.js
-synpress-docker-demo_1  |  HTTP  9/19/2023 1:55:56 AM 127.0.0.1 Returned 200 in 11 ms
-synpress-docker-demo_1  |  HTTP  9/19/2023 1:55:56 AM 127.0.0.1 Returned 200 in 90 ms
-synpress-docker-demo_1  |  HTTP  9/19/2023 1:56:02 AM 127.0.0.1 GET /metamask-fox.svg
-synpress-docker-demo_1  |  HTTP  9/19/2023 1:56:02 AM 127.0.0.1 Returned 200 in 2 ms
+synpress-docker-demo_1  |  HTTP  9/20/2023 1:30:59 AM 127.0.0.1 GET /
+synpress-docker-demo_1  |  HTTP  9/20/2023 1:30:59 AM 127.0.0.1 Returned 200 in 58 ms
+synpress-docker-demo_1  |  HTTP  9/20/2023 1:31:00 AM 127.0.0.1 GET /index.css
+synpress-docker-demo_1  |  HTTP  9/20/2023 1:31:00 AM 127.0.0.1 Returned 200 in 11 ms
+synpress-docker-demo_1  |  HTTP  9/20/2023 1:31:00 AM 127.0.0.1 GET /metamask-fox.svg
+synpress-docker-demo_1  |  HTTP  9/20/2023 1:31:00 AM 127.0.0.1 Returned 200 in 7 ms
+synpress-docker-demo_1  |  HTTP  9/20/2023 1:31:00 AM 127.0.0.1 GET /alert-red.svg
+synpress-docker-demo_1  |  HTTP  9/20/2023 1:31:00 AM 127.0.0.1 Returned 200 in 3 ms
+synpress-docker-demo_1  |  HTTP  9/20/2023 1:31:00 AM 127.0.0.1 GET /main.js
+synpress-docker-demo_1  |  HTTP  9/20/2023 1:31:00 AM 127.0.0.1 Returned 200 in 69 ms
+synpress-docker-demo_1  |  HTTP  9/20/2023 1:31:09 AM 127.0.0.1 GET /metamask-fox.svg
+synpress-docker-demo_1  |  HTTP  9/20/2023 1:31:09 AM 127.0.0.1 Returned 200 in 4 ms
 synpress-docker-demo_1  |     (Attempt 1 of 2) should connect wallet with success
 synpress-docker-demo_1  |     1) should connect wallet with success
 synpress-docker-demo_1  | [disconnectWalletFromAllDapps] Wallet is not connected to any dapps, skipping..
-synpress-docker-demo_1  |  HTTP  9/19/2023 1:57:07 AM 127.0.0.1 GET /metamask-fox.svg
-synpress-docker-demo_1  |  HTTP  9/19/2023 1:57:07 AM 127.0.0.1 Returned 304 in 7 ms
+synpress-docker-demo_1  |  HTTP  9/20/2023 1:32:15 AM 127.0.0.1 GET /metamask-fox.svg
+synpress-docker-demo_1  |  HTTP  9/20/2023 1:32:15 AM 127.0.0.1 Returned 304 in 3 ms
 synpress-docker-demo_1  |     (Attempt 1 of 2) import private key and connect wallet using imported metamask account
 synpress-docker-demo_1  |     2) import private key and connect wallet using imported metamask account
 synpress-docker-demo_1  | 
@@ -348,21 +347,21 @@ synpress-docker-demo_1  |   │ Pending:      0                                 
 synpress-docker-demo_1  |   │ Skipped:      0                                                                                │
 synpress-docker-demo_1  |   │ Screenshots:  4                                                                                │
 synpress-docker-demo_1  |   │ Video:        true                                                                             │
-synpress-docker-demo_1  |   │ Duration:     2 minutes, 41 seconds                                                            │
+synpress-docker-demo_1  |   │ Duration:     2 minutes, 45 seconds                                                            │
 synpress-docker-demo_1  |   │ Spec Ran:     connect-wallet-spec.js                                                           │
 synpress-docker-demo_1  |   └────────────────────────────────────────────────────────────────────────────────────────────────┘
 synpress-docker-demo_1  | 
 synpress-docker-demo_1  | 
 synpress-docker-demo_1  |   (Screenshots)
 synpress-docker-demo_1  | 
-synpress-docker-demo_1  |   -  /usr/src/app/tests/e2e/screenshots/connect-wallet-spec.js/connect wallet spec --      (780x463)
+synpress-docker-demo_1  |   -  /usr/src/app/tests/e2e/screenshots/connect-wallet-spec.js/connect wallet spec --     (1050x886)
 synpress-docker-demo_1  |       should connect wallet with success (failed).png                                               
-synpress-docker-demo_1  |   -  /usr/src/app/tests/e2e/screenshots/connect-wallet-spec.js/connect wallet spec --      (780x463)
+synpress-docker-demo_1  |   -  /usr/src/app/tests/e2e/screenshots/connect-wallet-spec.js/connect wallet spec --     (1050x886)
 synpress-docker-demo_1  |       should connect wallet with success (failed) (attempt 2).png                                   
-synpress-docker-demo_1  |   -  /usr/src/app/tests/e2e/screenshots/connect-wallet-spec.js/connect wallet spec --      (780x463)
+synpress-docker-demo_1  |   -  /usr/src/app/tests/e2e/screenshots/connect-wallet-spec.js/connect wallet spec --     (1050x886)
 synpress-docker-demo_1  |       import private key and connect wallet using imported metamask account (failed).               
 synpress-docker-demo_1  |      png                                                                                            
-synpress-docker-demo_1  |   -  /usr/src/app/tests/e2e/screenshots/connect-wallet-spec.js/connect wallet spec --      (780x463)
+synpress-docker-demo_1  |   -  /usr/src/app/tests/e2e/screenshots/connect-wallet-spec.js/connect wallet spec --     (1050x886)
 synpress-docker-demo_1  |       import private key and connect wallet using imported metamask account (failed)                
 synpress-docker-demo_1  |      (attempt 2).png                                                                                
 synpress-docker-demo_1  | 
@@ -370,8 +369,10 @@ synpress-docker-demo_1  |
 synpress-docker-demo_1  |   (Video)
 synpress-docker-demo_1  | 
 synpress-docker-demo_1  |   -  Started compressing: Compressing to 32 CRF                                                     
-synpress-docker-demo_1  |     Compression progress:  76%
-synpress-docker-demo_1  |   -  Finished compressing: 15 seconds                                                
+synpress-docker-demo_1  |     Compression progress:  29%
+synpress-docker-demo_1  |     Compression progress:  59%
+synpress-docker-demo_1  |     Compression progress:  88%
+synpress-docker-demo_1  |   -  Finished compressing: 38 seconds                                                
 synpress-docker-demo_1  | 
 synpress-docker-demo_1  |   -  Video output: /usr/src/app/tests/e2e/videos/connect-wallet-spec.js.mp4
 synpress-docker-demo_1  | 
@@ -383,9 +384,9 @@ synpress-docker-demo_1  |
 synpress-docker-demo_1  | 
 synpress-docker-demo_1  |        Spec                                              Tests  Passing  Failing  Pending  Skipped  
 synpress-docker-demo_1  |   ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
-synpress-docker-demo_1  |   │ ✖  connect-wallet-spec.js                   02:41        2        -        2        -        - │
+synpress-docker-demo_1  |   │ ✖  connect-wallet-spec.js                   02:45        2        -        2        -        - │
 synpress-docker-demo_1  |   └────────────────────────────────────────────────────────────────────────────────────────────────┘
-synpress-docker-demo_1  |     ✖  1 of 1 failed (100%)                     02:41        2        -        2        -        -  
+synpress-docker-demo_1  |     ✖  1 of 1 failed (100%)                     02:45        2        -        2        -        -  
 synpress-docker-demo_1  | 
 synpress-docker-demo_1  | Cypress run results: 2 total tests, 0 passed, 2 failed
 synpress-docker-demo_1  | 
